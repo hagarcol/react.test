@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-center items-center lg:justify-between my-12 gap-4 lg:gap-0 w-full">
           {/* Logo */}
           <div className="flex justify-center lg:justify-start items-center w-1/4">
-            <a href="#" className="flex items-center">
+            <a href="/" className="flex items-center">
               <img
                 src={NavLogo}
                 alt="Veil Brand Icon"

@@ -225,7 +225,7 @@ const Crypto = () => {
             checked:border-blue-500
             rounded" 
         />
-        <p className="font-home_header text-[#dedede] font-medium ml-2 contrast-[.4]">By using the site and creating an exchange, you agree to our <span className="text-nav_hover"><a href="">Terms of Services</a></span> </p>
+        <p className="font-home_header text-[#dedede] font-medium ml-2 contrast-[.4]">By using the site and creating an exchange, you agree to our <span className="text-nav_hover"><a href="/">Terms of Services</a></span> </p>
       </div>
 
       {/* SubmitButtion */}
@@ -235,7 +235,7 @@ const Crypto = () => {
 
       {/* Track */}
       <div className="flex w-full justify-center my-6">
-      <p className="font-home_header text-[#dedede] font-medium ml-2 contrast-[.4]">Already have an order number? <span className="text-nav_hover underline"><a href="">Track your order</a></span> </p>
+      <p className="font-home_header text-[#dedede] font-medium ml-2 contrast-[.4]">Already have an order number? <span className="text-nav_hover underline"><a href="/">Track your order</a></span> </p>
       </div>
 
       {isModalOpen && (

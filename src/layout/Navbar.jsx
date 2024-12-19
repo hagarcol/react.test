@@ -26,7 +26,7 @@ const NavbarComponent = () => {
               <a href="/faqs" className="px-6 py-2 hover:text-nav_hover">FAQs</a>
               <a href="/token" className="px-6 py-2 hover:text-nav_hover">Utility Token</a>
               <a href="/revenue" className="px-6 py-2 hover:text-nav_hover">Revenue Share</a>
-              <a href="" className="px-6 py-2 hover:text-nav_hover">How to use</a>
+              <a href="/" className="px-6 py-2 hover:text-nav_hover">How to use</a>
             </div>
           </div>
 
@@ -76,7 +76,7 @@ const NavbarComponent = () => {
             <a href="/revenue" className="px-6 py-2 hover:text-nav_hover">
               Revenue Share
             </a>
-            <a href="" className="px-6 py-2 hover:text-nav_hover">
+            <a href="/" className="px-6 py-2 hover:text-nav_hover">
               How to use
             </a>
           </div>

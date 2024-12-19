@@ -25,7 +25,7 @@ const Header = () => {
         <div className="font-home_header text-home_text font-normal text-xl leading-loose">
           Trade BTC, ETH, MATIC, and 100+ other cryptocurrencies with seamless security and privacy. No sign-up or limits.
         </div>
-        <a className="font-home_header text-home_text font-normal text-xl leading-loose" href="">Powered by our Veil utility token.</a>
+        <a className="font-home_header text-home_text font-normal text-xl leading-loose" href="/token">Powered by our Veil utility token.</a>
         <div className="mt-6 mb-2">
           <a class="h5 mt-3 mt-lg-4 text-white flex items-center justify-center font-nav-veil font-bold leading-tight text-xl" href="#Exchange">
             <span class="underline underline-offset-8">Try the Exchange Now </span>
