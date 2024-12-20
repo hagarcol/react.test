@@ -1,4 +1,6 @@
 import React from "react";
+
+// components
 import Header from "./Header";
 import Crypto from "./Crypto";
 import Privacy from "./Privacy";
@@ -14,11 +16,16 @@ const HomeMain = () => {
       
       <div className=" flex bg-gradient-home-main flex-col relative">
         <Privacy />
+
         <Crypto />
       </div>
+
       <Transaction />
+
       <SupportedCrypto />
+
       <Updates />
+
       <TrackOrder />
 
     </>
