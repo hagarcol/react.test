@@ -16,7 +16,7 @@ import xmr from '../../assets/Modal-Icon/xmr.svg';
 // Initial state for the slice
 const initialState = {
   isModalOpen: false,
-  isReceiveModalOpen: false,
+  // isReceiveModalOpen: false,
   selectedToken: null, // Initially null, default token will be set dynamically
   receiveToken: null,
   modalTarget: "send",
