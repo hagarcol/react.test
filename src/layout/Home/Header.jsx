@@ -14,7 +14,7 @@ const Header = () => {
   };
 
   return (
-    <div className="w-full overflow-hidden text-center lg:pt-[240px] sm:pb-[100px] pt-[140px]">
+    <div className=" w-full overflow-hidden text-center lg:pt-[240px] sm:pb-[100px] pt-[140px]">
       {/* Background Video */}
 
       <div className="relative z-[3] px-4 mx-auto max-w-screen-sm ">
@@ -50,7 +50,8 @@ const Header = () => {
       </div>
 
       <video
-        className="absolute top-0 left-0 h-[850px] object-cover lg:h-[892px] "
+        className="absolute top-0 left-0 h-[850px] object-cover lg:h-[892px]"
+        style={{ width: 'inherit' }}
         autoPlay
         loop
         muted
