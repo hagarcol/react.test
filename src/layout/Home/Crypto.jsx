@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React, { useEffect, useRef } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import {
   toggleModal,
@@ -11,6 +11,8 @@ import SubmitButton from "../../components/Home/SubButton";
 import GradientText from "../../components/Home/TextGradient";
 
 const Crypto = () => {
+
+  const modalRef = useRef(null);
   const dispatch = useDispatch();
 
   const {
@@ -28,6 +30,30 @@ const Crypto = () => {
   const filteredTokens = tokenList.filter((token) =>
     token.name.toLowerCase().includes(searchQuery.toLowerCase())
   );
+
+  useEffect(() => {
+    if (isModalOpen) {
+      document.body.style.overflow = "hidden";
+    } else {
+      document.body.style.overflow = "auto";
+    }
+  }, [isModalOpen]);
+
+  useEffect(() => {
+    const handleClickOutside = (event) => {
+      if (modalRef.current && !modalRef.current.contains(event.target)) {
+        dispatch(isModalClose());
+      }
+    };
+
+    if (isModalOpen) {
+      document.addEventListener("mousedown", handleClickOutside);
+    }
+
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, [isModalOpen]);
 
   return (
     <div id="Exchange" className="lg:my-12 lg:py-12 my-6 py-6 max-w-screen-xl px-4 flex flex-col lg:mx-auto">
@@ -183,7 +209,7 @@ const Crypto = () => {
 
       {isModalOpen && (
         <div className="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50">
-          <div className="bg-[#2d2d39] rounded-lg max-w-screen-md px-6 w-full overflow-auto mx-4 h-2/3">
+          <div className="bg-[#2d2d39] rounded-lg max-w-screen-md px-6 w-full overflow-auto mx-4 h-2/3" ref={modalRef}>
             <div className="sticky top-0 bg-[#2d2d39] p-4 z-10">
               <div className="flex justify-between items-center mb-4 border-b border-gray-600">
                 <h2 className="text-4xl font-bold text-nav-text font-nav-veil">Select Crypto to Send</h2>
